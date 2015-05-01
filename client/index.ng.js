@@ -3,10 +3,16 @@ angular.module('simple-meteor-angular-famous',[
   'famous.angular'
 ]);
 
+
 angular.module('simple-meteor-angular-famous')
   .controller('MafCtrl', function($scope){
     console.log("--> MafCtrl");
-   
+    
+    $scope.myClickHandler = function($event) {
+      console.log($event);
+      alert("Pos X:Y  "+$event.x+":"+$event.y+" "+ $event.target.innerText);
+    };
+    
     $scope.myGridLayoutOptions = {
       dimensions: [3, 3]
     };
