@@ -9,19 +9,19 @@
 			</fa-surface>
 		</fa-modifier>
 
-  <fa-grid-layout fa-options="myGridLayoutOptions">
-	  <fa-modifier ng-repeat="item in list"
-	               fa-size="[150, 50]"
-	               fa-origin="[0.5, 0.5]"
-	               fa-align="[0.5, 0.5]"
-	               fa-rotate-z="item.rotate.get()">
-		  <fa-surface fa-background-color="item.bgColor">
-		  	<div style="text-align:center;">
-		  		<h3>{{item.content}}</h3>
-			</div>
-		  </fa-surface>
-	  </fa-modifier>
-  </fa-grid-layout>
+		<fa-grid-layout fa-options="myGridLayoutOptions">
+		  <fa-modifier ng-repeat="item in list"
+		               fa-size="[150, 50]"
+		               fa-origin="[0.5, 0.5]"
+		               fa-align="[0.5, 0.5]"
+		               fa-rotate-z="item.rotate.get()">
+			  <fa-surface fa-background-color="item.bgColor">
+			  	<div style="text-align:center;">
+			  		<h3>{{item.content}}</h3>
+				</div>
+				  </fa-surface>
+			  </fa-modifier>
+		  </fa-grid-layout>
 
 		<fa-modifier fa-size="[undefined, 30]">
 			<fa-surface  fa-background-color="'#cccccc'">
